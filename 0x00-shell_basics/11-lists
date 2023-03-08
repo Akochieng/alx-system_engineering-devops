@@ -1,2 +1,3 @@
 #!/bin/bash
-ls -anl . ../ /boot
+ls -al . ../ /boot
+
