@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type l -name _hello -exec vincent:staff {} +
