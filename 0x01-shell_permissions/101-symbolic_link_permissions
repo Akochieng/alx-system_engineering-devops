@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type l -name _hello -exec vincent:staff {} +
+find . -type l -name _hello -exec chown vincent:staff {} +
