@@ -1,2 +1,2 @@
 #!/bin/bash
-echo Chicago | tr --delete "c.C"
+tr --delete "c.C"
