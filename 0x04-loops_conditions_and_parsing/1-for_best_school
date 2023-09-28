@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#This is a simple script to demonstrate working with for loops
+for _ in $(seq 1 10); do
+	echo "Best School"
+done
