@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #simple script to print words
 i=1
-while [ "$i" -lt 10 ]; do
+while [ "$i" -le 10 ]; do
 	if [ "$i" -eq 4 ]
 	then
 		echo "bad luck"
