@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #terminates the to infinity and beyond process
-i=$(pgrep -f './4-to_infinity_and_beyond')
+i=$(pgrep -f './7-highlander')
 if [ -n "$i" ];
 then
-	kill "$i"
+	pkill -f './7-highlander'
 fi
