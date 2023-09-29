@@ -3,5 +3,5 @@
 i=$(pgrep -f './4-to_infinity_and_beyond')
 if [ -n "$i" ];
 then
-	kill $i
+	pkill -f './4-to_infinity_and_beyond'
 fi
