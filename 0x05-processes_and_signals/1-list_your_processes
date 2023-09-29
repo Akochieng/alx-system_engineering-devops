@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#lists all process including those without a tty in a user oriented
+#format with process hierarchy
+ps aux

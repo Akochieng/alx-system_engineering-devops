@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#terminates the to infinity and beyond process
+i=$(pgrep 'infinity')
+if [ -n "$i" ];
+then
+	kill $i
+fi
