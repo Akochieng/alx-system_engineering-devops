@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+i=1
+echo "$$" > /var/run/myscript.pid
+function CLEANUP
+{
+	rm '/var/run/myscript.pid'
+	exit
+}
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'CLEANUP' SIGTERM
+trap 'CLEANUP' SIGQUIT
+while [ $i -ge 1 ]; do
+	echo "To infinity and beyond"
+done
