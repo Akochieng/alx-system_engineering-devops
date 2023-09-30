@@ -7,10 +7,9 @@ function CLEANUP
 	rm '/var/run/myscript.pid'
 	exit
 }
-trap 'echo "Y U no love me?!"' SIGINT
-trap 'echo "I hate the kill command"' SIGTERM
-trap 'CLEANUP' SIGTERM
-trap 'CLEANUP' SIGQUIT
+trap 'echo "Y U no love me?!"; CLEANUP' SIGINT
+trap 'echo "Y U no love me?!"; CLEANUP' SIGQUIT
+trap 'echo "I hate the kill command"; CLEANUP' SIGTERM
 while [ $i -ge 1 ]; do
 	echo "To infinity and beyond"
 done
