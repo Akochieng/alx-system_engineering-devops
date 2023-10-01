@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#lists all the files in a directory
 for filename in * ; do
 	echo "$filename"
 done
