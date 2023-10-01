@@ -1,2 +1,19 @@
 #!/usr/bin/env bash
+filename="school"
+if [ ! -e "$filename" ]
+then
+	echo "school file  doesn not exist"
+else
+	echo "school file exists"
+	if [ -s "$filename" ]
+	then
+		echo "school file is not empty"
+	else
+		echo "school file is empty"
+	fi
+	if [ -f "$filename" ]
+	then
+		echo "school is a regular file"
+	fi
+fi
 
