@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #lists all the files in a directory
-for filename in $(find . -type f | cut -d '-' -f 2); do
+for filename in $(find . -mindepth 1 -maxdepth 1 | cut -d '-' -f 2); do
 	echo "$filename"
 done
