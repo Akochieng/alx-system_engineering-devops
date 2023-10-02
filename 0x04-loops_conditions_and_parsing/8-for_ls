@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 #lists all the files in a directory
+scriptname=$(basename "$0")
 for filename in * ; do
-	echo "$filename"
+	if [[ ! "$filename" == "$scriptname" ]]
+	then
+		echo "$filename"
+	fi
 done
