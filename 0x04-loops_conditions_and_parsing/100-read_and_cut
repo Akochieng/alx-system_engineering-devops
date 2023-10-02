@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#displays the content of the /etc/passwd to only display
+#username, userid and home directory path for the user
+IFS=":"
+#shellcheck disable=SC2034
+while read -r username pass uid gid details directory shell; do
+	echo "$username: $uid: $directory"
+done < /etc/passwd
