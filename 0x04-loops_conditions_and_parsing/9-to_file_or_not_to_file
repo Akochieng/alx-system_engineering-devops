@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#checks whether file school exists, and prints whether or not
+#it is empty and a regular file
 filename="school"
 if [ ! -e "$filename" ]
 then

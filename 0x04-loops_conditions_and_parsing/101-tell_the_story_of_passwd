@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#displays the content of the /etc/passwd to only display
+#username, userid and home directory path for the user
+IFS=":"
+#shellcheck disable=SC2034
+while read -r username pass uid gid details directory shell; do
+	echo "The user $username is part of the $gid gang, lives in $directory and rides $shell. $uid's place is protected by the passcode $pass, more info about the user here: $details"
+done < /etc/passwd
