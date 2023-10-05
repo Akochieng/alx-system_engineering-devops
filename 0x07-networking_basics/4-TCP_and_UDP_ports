@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#lists the active ports on a server
+netstat -l
