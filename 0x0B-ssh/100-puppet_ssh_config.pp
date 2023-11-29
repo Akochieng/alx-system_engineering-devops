@@ -1,9 +1,9 @@
 #Creates an ssh config file
-file { "/home/alphonce/.ssh":
+file { "/home/ubuntu/.ssh":
   ensure  => directory,
 }
 
-file {  "/home/alphonce/.ssh/ssh_config":
+file {  "/home/ubuntu/.ssh/ssh_config":
   ensure  => file,
   content => @(EOT),
     IdentityFile ~/.ssh/school
