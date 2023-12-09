@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#display information about subdomains
+if [ $# -ne 1 ];
+	then
+		read -ra subs <<< "${@:2:($#)}"
+	else
+		subs=("www" "lb-01" "web-01" "web-02")
+fi
+domain=$1
+function query() {
+	strng=$(dig "$1" | grep ^"$1")
+	theip=$(echo "$strng" | awk '{print $NF}')
+	rtype=$(echo "$strng" | awk '{print $4}')
+	echo "The subdomain $1 is a $rtype record and points to $theip"
+}
+query "$domain"
+for el in "${subs[@]}"; do
+	query "$el"".""$domain"
+done
