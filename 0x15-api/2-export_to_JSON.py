@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 '''
 Simple module to fetch data from a remote web app and save on a json file
 '''

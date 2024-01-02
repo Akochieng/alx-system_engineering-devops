@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 '''
 A simple module to fetch data from remote webapp and save
 the data on a csv file.

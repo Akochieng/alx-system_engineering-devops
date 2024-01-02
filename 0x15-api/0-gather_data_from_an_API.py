@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 '''
 A simple python API to extract to do list of an employee from the
 json place holder test webapp
@@ -41,7 +41,7 @@ def print_todo():
                 NUMBER_OF_DONE_TASKS += 1
                 completed.append(val.get('title'))
         print(
-            f"Employee {EMPLOYEE_NAME} is done with tasks("\
+            f"Employee {EMPLOYEE_NAME} is done with tasks("
             f"{NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):")
         for item in completed:
             print(f"\t{item}")

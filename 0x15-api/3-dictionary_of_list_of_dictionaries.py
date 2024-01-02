@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 '''
 Fetches data from remote web app and saves on a json file
 '''
