@@ -4,9 +4,9 @@ Simple module to fetch data from a remote web app and save on a json file
 '''
 import json
 from json import JSONDecodeError
-import requests
+from requests.exceptions import ConnectionError, HTTPError, Timeout
 from requests import exceptions
-from requests.exceptions import HTTPError, Timeout, ConnectionError
+import requests
 from sys import argv
 import sys
 

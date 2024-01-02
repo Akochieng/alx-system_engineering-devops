@@ -4,9 +4,9 @@ A simple python API to extract to do list of an employee from the
 json place holder test webapp
 '''
 from json import JSONDecodeError
-import requests
 from requests import exceptions
-from requests.exceptions import HTTPError, Timeout, ConnectionError
+from requests.exceptions import ConnectionError, HTTPError, Timeout
+import requests
 from sys import argv
 import sys
 
@@ -44,7 +44,7 @@ def print_todo():
             f"Employee {EMPLOYEE_NAME} is done with tasks("
             f"{NUMBER_OF_DONE_TASKS}/{TOTAL_NUMBER_OF_TASKS}):")
         for item in completed:
-            print(f"\t{item}")
+            print(f"\t {item}")
     except (HTTPError, Timeout, ConnectionError, JSONDecodeError) as msg:
         print(msg)
     except requests.exceptions.RequestException as msg:

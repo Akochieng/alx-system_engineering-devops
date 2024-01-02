@@ -4,9 +4,9 @@ Fetches data from remote web app and saves on a json file
 '''
 import json
 from json import JSONDecodeError
-import requests
-from requests import exceptions
 from requests.exceptions import HTTPError, Timeout, ConnectionError
+from requests import exceptions
+import requests
 from sys import argv
 import sys
 

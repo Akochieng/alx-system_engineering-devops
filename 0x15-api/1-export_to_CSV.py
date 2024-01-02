@@ -5,9 +5,9 @@ the data on a csv file.
 '''
 import csv
 from json import JSONDecodeError
-import requests
+from requests.exceptions import ConnectionError, HTTPError, Timeout
 from requests import exceptions
-from requests.exceptions import HTTPError, Timeout, ConnectionError
+import requests
 from sys import argv
 import sys
 
